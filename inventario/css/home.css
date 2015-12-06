@@ -1,0 +1,175 @@
+/*======================
+	TOP
+========================*/
+/*
+The home page is broken up into two rows. Each row is being 
+wrapped by a #top and #bottom div. 
+*/
+#top
+{
+	float:left; 
+	margin-bottom:1px; 
+}
+/*
+The Photo div controls the placement and dimensions of the image. 
+*/
+#photo
+{
+	float:left; 
+	margin-right:1px; 
+	width:238px; 
+	height:217px;
+	border:0; 
+}
+/* Disables the border */
+#photo img{ border: 0 }
+/* 
+This sets the landscape background image and sets the width
+and height of the #into div
+*/
+#intro
+{
+	background:url(../images/intro_background.jpg) no-repeat; 
+	float:left; 
+	margin-left:1px;
+	height:217px; 
+	width:700px;	
+}
+/*
+I wanted the welcome text to be specifically placed and I didn't
+want it to go too far to the right so I wrapped it in its own
+#welcome div.
+*/
+#welcome
+{
+	float:left; 
+	width:370px; 
+	height:140px;
+	position:relative;
+	left:25px; 
+	top:30px; 	
+}
+/*
+H1 is a very important heading for SEO, for this reason I 
+still wantedto use it for my home page but didn't want to 
+use the default styling for it. So I just created some custom 
+styling for the home page. 
+*/
+#welcome h1
+{
+	color:#127e00; font-size:22px; margin: 0 0 15px 0; line-height:1; padding:0; font-weight:700; background:0;
+}
+/*
+Like on #welcome I wanted the #phone to be specifically
+placed. 
+*/
+#phone
+{
+	float:left; 
+	width:150px; 
+	height:40px;  
+	position:relative; 
+	left:115px; 
+	top:32px; 	
+}
+/*
+Newslwetter is also specifically placed
+*/
+#newsletter
+{
+	float:left; 
+	width:200px; 
+	height:55px; 
+	padding:10px 0px 10px 15px;
+	position:relative; 
+	left:102px;
+	top:52px;	
+}
+/*
+I used a span because I wanted to style the text but I didn't
+want to give it extra emphasis to the search engines. 
+*/
+#newsletter span
+{
+	display:block; 
+	margin-bottom:7px; 
+	font-size:14px; 
+	color:#fff; 
+}
+/*
+In this case I wanted the input element to be the same
+across all browsers so I opted to assign it a width instead
+of using the traditional 'size' attribute. 
+*/
+#newsletter input
+{ 
+	width:120px; 
+	margin: 0 2px 0 2px;  
+	padding:3px;
+	font-size:10px; 	
+} 
+/*
+The submit element gets a special style
+*/
+#newsletter input.signup
+{ 
+	background:url(../images/sign_up_btn.png) no-repeat;
+	margin:0;  
+	border:0;  
+	width:54px; 
+	height: 21px; 
+}
+/*======================
+	BOTTOM
+========================*/
+/*
+This wraps the bottom layout and ads the two-column gray background
+*/
+#bottom
+{
+	background:url(../images/home_content_background.gif) repeat-y; 
+	float:left; 
+	margin-top:1px; 
+}
+/*
+Each h3 element inherits the global styles that are set in 
+typography.css, I wanted to change them all to a different style. 
+*/
+#testimonials h3, #what-we-offer h3, #recent-events h3{  padding: 10px; font-size:14px; color:#fff; font-weight:700; }
+
+/*
+Each element has the same text styles but different background 
+styles. 
+*/
+#testimonials h3{ background:#2451a0 }
+#what-we-offer h3{ background:#ff8401; }
+#recent-events h3{ background:#2451a0 }
+/*
+This positionns the #testimonial divs
+*/
+#testimonials
+{
+	float:left; 
+	width:238px;
+	margin-right:1px;
+	padding:0; 
+}
+/*
+The margin: 0 1px 0 1px adds a white 'line' to the right and left of 
+#what-we-offer
+*/
+#what-we-offer
+{
+	float:left; 
+	width:460px;
+	margin:0 1px 0 1px;
+}
+/*
+Recent events is the same width of the light gray column background
+*/
+#recent-events
+{
+	float:left; 
+	width:238px; 
+	margin-left:1px; 
+}

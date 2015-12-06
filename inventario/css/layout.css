@@ -1,0 +1,242 @@
+/*======================
+	RESET
+========================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Sans-Serif;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1.3;
+	color: black;
+	text-align:center; 
+	background: #00295d url(../images/site_background.png) repeat-x;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/*======================
+	HEADER
+========================*/
+/*
+The container div is what sets the width of your content and centers it in the browser. 
+Each of your main divs will have a container div.
+*/
+.container
+{
+	margin:0 auto; /* Centers the div */
+	width:960px; /*This is the width of your website */
+	text-align:left; 
+}
+/*
+Notice that the width of header is set to 100%.
+This is so that the background will extend to the edge of the browser.
+*/
+#header
+{
+	background:url(../images/header_background.jpg) no-repeat 50% 0; 
+	float:left; 
+	width: 100%; 
+	height:170px; 
+}
+/*
+The a element (which is usually an inline element) gets changed to a block element
+so that it can easily be positioned. 
+*/
+#logo
+{
+	background:url(../images/logo.png) no-repeat;
+	display:block; 
+	position:relative;
+	top:6px;
+	float:left; 
+	width:360px; 
+	height:40px; 	
+}
+#main-menu
+{
+	float:right;
+	position:relative;
+	top:23px; 
+}
+#main-menu li
+{
+	background-image:url(../images/main_menu.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	float:left;
+	margin: 0 12px 0 12px;
+	padding:0; 
+	height:23px;
+	list-style:none; 
+	line-height:1; 	
+}
+/*
+The over and active state get handled here.
+Notice the use of negative pixels? This is the advantage of CSS sprites.
+Instead of using two images to achieve the effect, we just use one and move it.
+*/
+#main-menu li:hover, #main-menu li.active { background-position: 0 -23px;}
+#main-menu li:hover a, #main-menu li.active a{ background-position: 100% -23px; }
+#main-menu li a
+{
+	background-image:url(../images/main_menu_right.png);
+	background-repeat:no-repeat;
+	background-position:500% 0;
+	display:block; 
+	padding:4px 10px 9px 10px;
+	font-size:10px; 
+	color:#fff; 
+	text-decoration:none; 
+	vertical-align:middle;
+}
+
+/*======================
+	MAIN
+========================*/
+/*
+The width is also set to 100% because there is a background image
+that we want to go to the edge. 
+
+Notice that height isn't set for #main, this is because it will need to expand
+with the content. 
+*/
+#main
+{
+	background: #fff url(../images/main_background.png) repeat-x;
+	float:left; 
+	width:100%;
+}
+/*
+All this does is add the background that makes the content appear 
+to pop off the screen. 
+*/
+#wrapper
+{
+	background: url(../images/base.jpg) no-repeat 50% 0;
+	float:left; 	 
+	width:100%; 		
+}
+/*
+This div sets the default height of your content and also adds a gray 
+background to the right column. 
+*/
+#content
+{
+	background:url(../images/content_background.gif) repeat-y; 
+	float:left;
+	width:940px;
+	margin:10px; 
+	min-height:515px;
+	height:auto !important; /* IE 6 min-height fix */
+	height:515px; /* IE 6 min-height fix */
+}
+
+#left-column
+{
+	width:640px; 
+	float:left;  
+}
+#right-column
+{
+	float:left; 
+	width:280px;
+	padding:10px; 
+}
+.content
+{
+	float:left;
+	padding:10px; 	
+}
+/*======================
+	FOOTER
+========================*/
+/*
+This adds the site bottom and makes it expand to the edge of the screen
+like we did with #header and #main
+*/ 
+#footer
+{
+	background:url(../images/site_bottom.gif) repeat-x; 
+	float:left; 
+	width:100%;
+	height:70px; 
+	padding-top:30px;
+	font-size:12px; 
+	color:#fff; 
+}
+/*
+Adds a 7px margin to the bottom of the menu
+*/
+#footer-menu 
+{
+	margin:0 0 5px 0; 
+	padding:0; 
+}
+#footer-menu li
+{ 
+	padding:0 6px 0 6px;
+	display:inline;
+	border-right:solid 1px #fff; 
+	list-style:none;
+	vertical-align:middle; 
+}
+/* 
+This removes any inherited borders 
+*/
+#footer-menu li.last
+{
+	border-right:0; 	
+}
+/* 
+
+*/
+#footer-menu li a
+{
+	font-size:12px; 
+	color:#fff; 
+	text-decoration:none; 		
+}
+/* Adds an underline when hovered or active */
+#footer-menu li a:hover, #footer ul li.active a
+{
+	text-decoration:underline; 	
+}
+#footer #info
+{	
+	font-size:10px; 
+	padding:6px; 
+}

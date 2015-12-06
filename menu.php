@@ -33,7 +33,7 @@ header('location:index.php');
 						<li><a href="notas.php" class="clsVentanaIFrame clsBoton" rel="Busqueda de producto" >Ingresar</a></li>
 					<li><a href="buscar.php" class="clsVentanaIFrame clsBoton" rel="Busqueda de producto" >Buscar Producto</a></li>
 									<li><a href="buscar_venta.php" class="clsVentanaIFrame clsBoton" rel="Registro de ventas" >Ventas</a></li>
-					<li><a href="ingreso_nuevo.php" class="clsVentanaIFrame clsBoton" rel="Ingreso, busqueda o modificacion de empleados" >Empleado</a></li>
+					
 					<li><a href="proveedor.php" class="clsVentanaIFrame clsBoton" rel="Ingreso, busqueda o modificacion de proveedores" >Proveedor</a></li>			
 						<li><a href="nuevo_usuario.php" class="clsVentanaIFrame clsBoton" rel="Agregar Usuario" >Agregar Usuario</a></li>			
 				<li><a href="cerrar_sesion.php">Salir</a></li>

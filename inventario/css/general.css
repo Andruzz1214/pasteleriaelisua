@@ -1,0 +1,115 @@
+/*======================
+    TABLE
+========================*/
+/*
+border-collapse makes combines two lines into one so that you
+don't get extra thick lines. 
+*/
+table
+{
+	border-collapse:collapse;
+	border:solid 1px #000; 
+}
+/*
+Search engines place extra emphasis on th, so make sure
+that every table uses them. 
+*/
+table th
+{
+	background:#ff8401; 
+	padding:5px; 
+	border:solid 1px #000; 
+	border-bottom-width:2px; 
+	color:#fff; 
+	font-weight:700;
+}
+table td
+{
+	padding:5px; 
+	border:solid 1px #000; 
+}
+/*======================
+   IMAGE
+========================*/
+img
+{
+	border:solid 1px #bdbdbd; 
+}
+/*======================
+   EVENTS
+========================*/
+/*
+Each event should have some space below it
+*/
+.event
+{
+	float:left; 
+	margin-bottom:10px;	
+}
+/*
+Each event div has a title with a calendar icon. 
+*/
+.event span 
+{ 
+	background:url(../images/calendar.png) no-repeat; 
+	display:block; 
+	padding: 2px 0 2px 20px; 
+	font-size:10px; 
+	color:#717171; 	
+}
+.event a
+{
+	display:block; 
+	margin-bottom:7px;	
+}
+/*
+We're going to make the news text smaller and 
+lighter because we want more emphasis on the title. 
+*/
+.event p
+{ 
+	font-size:10px; 
+	color:#4a4a4a; 
+}
+/*======================
+ 	ITEM
+========================*/
+/*
+Each item is separated by plenty of padding and a soft gray line. 
+*/
+.item
+{
+	float:left;
+	width:100%; 
+	padding:7px 0 7px 0;
+	border-bottom:solid 1px #dfdfdf;	
+	
+}
+/*
+The .last element removes the soft gray border. 
+*/
+.last{ border-bottom:0 }
+/*
+This positions the icon and makes sure that only certain 
+dimensions are displayed. 
+*/
+.item .icon
+{
+	float:left;
+	width:70px; 
+	height:70px; 
+	margin: 0 15px 0 15px; 
+}
+/*
+This removes any styling that the images might inherit 
+from the global image style set in typography.css. 
+*/
+.item .icon img{ border: 0 }
+/*
+Even though this class doesn't need styling it's good
+to declare it anyway for the sake of completeness. 
+*/
+.item .info
+{
+
+}

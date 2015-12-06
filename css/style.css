@@ -61,7 +61,7 @@ text-shadow:2px 2px 4px #000000;
 /* Menu para controlar tamaño y cantidad de menus  */ 
 .menu {	
 	height: 40px;
-	width: 750px;
+	width: 650px;
 
 	background: #4c4e5a;
 	background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
